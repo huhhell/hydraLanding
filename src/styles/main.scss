@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+  font-family: Monserrat, sans-serif;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+._container {
+  background: #302C42;
+  padding: 50px;
+}
+
+.btn-purple {}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &-img {}
+    &-name {}
+  }
+
+  &__nav {
+
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &-item {
+      font-size: 14px;
+      color: #ffff;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+
+      &:hover {
+        text-decoration: underline 2px;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &  a {
+      font-size: 14px;
+      padding: 17px 35px;
+      font-weight: 700;
+      transition: 0.3s all ease-out;
+    }
+
+    &-link {
+      color: #fff;
+      border: 2px solid #ffffff;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      border-radius: 40px;
+
+      &:hover {
+        color: #343045;
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+        border: 2px solid #8176AF;
+      }
+    }
+
+    &-join {
+      color: #343045;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+      border: 2px solid #8176AF;
+
+      &:hover {
+        color: #ffffff;
+        background: none;
+        border: 2px solid #ffff;
+      }
+    }
+  }
+}
