@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #302C42;
+  background: #362B40;
 }
 
 ._container {
@@ -130,6 +130,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 @media (max-width: 1000px) {
   .intro {
@@ -272,6 +273,45 @@ body {
 .intro__img-left {
   left: -150px;
   top: 200px;
+}
+.contact {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  border-radius: 90px;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(40, 29, 45) 0%, rgb(63, 49, 82) 50%, rgb(40, 29, 45) 100%);
+  box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
+}
+.contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 40px;
+  gap: 20px;
+}
+.contact__item:nth-child(1) {
+  flex: 0 0 35%;
+  border-right: 1px solid rgba(192, 183, 232, 0.33);
+}
+.contact__item:nth-child(2) {
+  flex: 0 0 30%;
+  border-right: 1px solid rgba(192, 183, 232, 0.33);
+}
+.contact__item:nth-child(3) {
+  flex: 0 0 35%;
+}
+.contact__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contact__text {
+  color: #ffffff;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=main.css.map */
