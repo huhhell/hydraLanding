@@ -28,4 +28,5 @@ window.addEventListener('DOMContentLoaded',() => {
     }
 
     carousel('contact__item', 'contact__prev', 'contact__next');
+    carousel('options__item', 'options__prev', 'options__next');
 })
