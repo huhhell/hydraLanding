@@ -285,6 +285,16 @@ body {
   background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(40, 29, 45) 0%, rgb(63, 49, 82) 50%, rgb(40, 29, 45) 100%);
   box-shadow: 0 4px 4px 0 rgba(192, 183, 232, 0.01);
 }
+@media (max-width: 1050px) {
+  .contact {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    padding: 25px 20px;
+  }
+}
 .contact__item {
   display: flex;
   align-items: center;
@@ -292,16 +302,47 @@ body {
   padding: 25px 40px;
   gap: 20px;
 }
-.contact__item:nth-child(1) {
+@media (max-width: 1050px) {
+  .contact__item {
+    display: none;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 600px) {
+  .contact__item {
+    padding: 0 10px;
+  }
+}
+.contact__item:nth-child(2) {
   flex: 0 0 35%;
   border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
-.contact__item:nth-child(2) {
+@media (max-width: 1050px) {
+  .contact__item:nth-child(2) {
+    flex: 0 0 90%;
+    border: unset;
+  }
+}
+.contact__item:nth-child(3) {
   flex: 0 0 30%;
   border-right: 1px solid rgba(192, 183, 232, 0.33);
 }
-.contact__item:nth-child(3) {
+@media (max-width: 1050px) {
+  .contact__item:nth-child(3) {
+    flex: 0 0 90%;
+    border: unset;
+  }
+}
+.contact__item:nth-child(4) {
   flex: 0 0 35%;
+}
+@media (max-width: 1050px) {
+  .contact__item:nth-child(4) {
+    flex: 0 0 90%;
+  }
+}
+.contact__item-active {
+  display: flex;
 }
 .contact__title {
   color: #ffffff;
@@ -309,9 +350,50 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
 }
+@media (max-width: 600px) {
+  .contact__title {
+    display: none;
+  }
+}
 .contact__text {
   color: #ffffff;
   font-size: 14px;
+}
+.contact__prev {
+  display: none;
+  background: transparent;
+}
+@media (max-width: 1050px) {
+  .contact__prev {
+    display: block;
+  }
+}
+.contact__prev-img {
+  width: 50px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .contact__prev-img {
+    width: 30px;
+  }
+}
+.contact__next {
+  display: none;
+  background: transparent;
+}
+@media (max-width: 1050px) {
+  .contact__next {
+    display: block;
+  }
+}
+.contact__next-img {
+  width: 50px;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .contact__next-img {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
