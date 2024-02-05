@@ -443,6 +443,11 @@ body {
 
   @media (max-width: 1000px) {
     display: block;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 700px) {
+    margin-bottom: 20px;
   }
 
   &__title {
@@ -453,6 +458,11 @@ body {
     color: #FFF;
     font-size: 36px;
     font-weight: 700;
+    margin-bottom: -20px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 0;
+    }
 
     @media (max-width: 1000px) {
       text-align: center;
@@ -512,6 +522,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 17%;
+  margin-bottom: 60px;
   
   @media (max-width: 1200px) {
     gap: 7%;
@@ -603,6 +614,80 @@ body {
 
     @media (max-width: 1000px) {
       display: none;
+    }
+  }
+}
+
+.options {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 12px;
+
+  @media (max-width: 1200px) {
+    grid-template: 1fr 1fr / 1fr 1fr;
+  }
+
+  @media (max-width: 700px) {
+    grid-template: 1fr / 0px auto 0px;
+    gap: 0;
+  }
+
+  &__item {
+    max-width: 400px;
+    padding: 25px 40px;
+    border-radius: 40px;
+    background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #281d2d 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  &__item-active {
+    display: flex;
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    border: 13px solid rgba(14, 14, 14, 0.32);
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(192, 183, 232, 0.33);
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  &__btn {
+    padding: 17px 40px;
+  }
+
+  &__prev, &__next {
+    display: none;
+    position: relative;
+    z-index: 4;
+    background: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+
+    @media (max-width: 700px) {
+      display: block;
     }
   }
 }
