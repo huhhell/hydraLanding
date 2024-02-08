@@ -668,6 +668,9 @@ body {
   }
 }
 
+.clients {
+  margin-bottom: 60px;
+}
 .clients__intro {
   position: relative;
   background: linear-gradient(0deg, rgba(48, 44, 66, 0.69) 0%, rgba(48, 44, 66, 0.69) 100%), url("../../src/img/clients/main.png") 30% 50%, lightgray 50%/cover no-repeat;
@@ -755,6 +758,110 @@ body {
     justify-items: center;
     align-items: center;
   }
+}
+
+.steps {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 800px) {
+  .steps {
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+  }
+}
+.steps__item {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .steps__item {
+    display: none;
+  }
+}
+.steps__item-active {
+  display: flex;
+}
+.steps__number {
+  width: 175px;
+  height: 175px;
+  border: 15px solid rgba(13, 13, 13, 0.32);
+  border-radius: 50%;
+  padding: 32px 0;
+  background: #8176AF;
+  font-size: 64px;
+  color: rgba(52, 48, 69, 0.8);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .steps__number {
+    width: 120px;
+    height: 120px;
+    border: 5px solid rgba(13, 13, 13, 0.32);
+    padding: 22px 0;
+    font-size: 50px;
+  }
+}
+.steps__text {
+  display: flex;
+  align-items: start;
+  margin-left: -25px;
+}
+@media (max-width: 800px) {
+  .steps__text {
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    margin: unset;
+  }
+}
+.steps__arrow {
+  margin-top: -18px;
+}
+@media (max-width: 800px) {
+  .steps__arrow {
+    display: none;
+    margin-top: unset;
+  }
+}
+.steps__name {
+  font-size: 24px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .steps__name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .steps__name {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+.steps__line {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -50px;
+  width: 120%;
+}
+@media (max-width: 800px) {
+  .steps__line {
+    display: none;
+  }
+}
+.steps__prev, .steps__next {
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=main.css.map */
