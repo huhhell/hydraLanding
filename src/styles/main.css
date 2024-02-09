@@ -42,7 +42,7 @@ body {
   border: 2px solid white;
 }
 
-.btn-carousel {
+.btn-carousel-prev, .btn-carousel-next {
   display: none;
   position: relative;
   z-index: 4;
@@ -51,9 +51,13 @@ body {
   border-radius: 50%;
 }
 @media (max-width: 700px) {
-  .btn-carousel {
+  .btn-carousel-prev, .btn-carousel-next {
     display: block;
   }
+}
+
+.btn-carousel-next {
+  transform: rotateY(180deg);
 }
 
 .header {
@@ -600,6 +604,7 @@ body {
 }
 
 .options {
+  position: relative;
   display: grid;
   grid-template: 1fr/repeat(4, 1fr);
   align-items: center;
@@ -619,6 +624,8 @@ body {
   }
 }
 .options__item {
+  position: relative;
+  z-index: 3;
   max-width: 400px;
   padding: 25px 40px;
   border-radius: 40px;
@@ -659,16 +666,16 @@ body {
 .options__btn {
   padding: 17px 40px;
 }
-.options__prev, .options__next {
-  display: none;
-  position: relative;
-  z-index: 4;
-  background: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
-  border-radius: 50%;
+.options__line {
+  position: absolute;
+  z-index: 0;
+  top: 80px;
+  left: -50px;
+  width: 110%;
 }
 @media (max-width: 700px) {
-  .options__prev, .options__next {
-    display: block;
+  .options__line {
+    display: none;
   }
 }
 
@@ -874,6 +881,9 @@ body {
     display: block;
   }
 }
+.steps__next {
+  transform: rotateY(180deg) translateY(-50%);
+}
 
 .join {
   border-radius: 100px;
@@ -884,7 +894,8 @@ body {
 }
 @media (max-width: 900px) {
   .join {
-    padding: 30px 40px;
+    padding: 30px 20px;
+    border-radius: 40px;
   }
 }
 .join__title {
@@ -897,11 +908,22 @@ body {
   font-weight: 700;
   border-bottom: 1px solid #9E8CC1;
 }
+@media (max-width: 900px) {
+  .join__title {
+    font-size: 24px;
+    width: 170px;
+  }
+}
 .join__subtitle {
   font-size: 36px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 50px;
+}
+@media (max-width: 900px) {
+  .join__subtitle {
+    font-size: 24px;
+  }
 }
 .join__form {
   display: grid;
@@ -951,6 +973,12 @@ body {
   border-radius: 40px;
   font-size: 18px;
 }
+@media (max-width: 900px) {
+  .join__form-input {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+}
 .join__form-input::placeholder {
   color: #ffffff;
 }
@@ -959,6 +987,7 @@ body {
 }
 
 .footer {
+  position: relative;
   display: grid;
   grid-template: 1fr/22% 22% 22% 36%;
   justify-items: center;

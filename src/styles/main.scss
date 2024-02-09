@@ -45,7 +45,7 @@ body {
   }
 }
 
-.btn-carousel {
+.btn-carousel-prev, .btn-carousel-next {
   display: none;
   position: relative;
   z-index: 4;
@@ -56,6 +56,10 @@ body {
   @media (max-width: 700px) {
     display: block;
   }
+}
+
+.btn-carousel-next {
+  transform: rotateY(180deg);
 }
 
 .header {
@@ -636,6 +640,7 @@ body {
 }
 
 .options {
+  position: relative;
   display: grid;
   grid-template: 1fr / repeat(4, 1fr);
   align-items: center;
@@ -653,6 +658,8 @@ body {
   }
 
   &__item {
+    position: relative;
+    z-index: 3;
     max-width: 400px;
     padding: 25px 40px;
     border-radius: 40px;
@@ -698,15 +705,15 @@ body {
     padding: 17px 40px;
   }
 
-  &__prev, &__next {
-    display: none;
-    position: relative;
-    z-index: 4;
-    background: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
-    border-radius: 50%;
+  &__line {
+    position: absolute;
+    z-index: 0;
+    top: 80px;
+    left: -50px;
+    width: 110%;
 
-    @media (max-width: 700px) {
-      display: block;
+    @media (max-width:700px) {
+      display: none;
     }
   }
 }
@@ -798,7 +805,6 @@ body {
     }
 
     &-active {
-
 
       @media (max-width: 700px) {
         height: 282px;
@@ -920,10 +926,12 @@ body {
       display: block;
     }
   }
+
+  &__next {
+    transform: rotateY(180deg) translateY(-50%);
+  }
 }
 
-
-// todo fix responsive
 .join {
   border-radius: 100px;
   background: radial-gradient(50% 50% at 50% 50%, #423455 0%, #281D2D 100%);
@@ -932,7 +940,8 @@ body {
   margin-bottom: 90px;
 
   @media (max-width: 900px) {
-    padding: 30px 40px;
+    padding: 30px 20px;
+    border-radius: 40px;
   }
 
   &__title {
@@ -944,6 +953,11 @@ body {
     font-size: 36px;
     font-weight: 700;
     border-bottom: 1px solid #9E8CC1;
+
+    @media (max-width: 900px) {
+      font-size: 24px;
+      width: 170px;
+    }
   }
 
   &__subtitle {
@@ -951,6 +965,10 @@ body {
     font-weight: 300;
     text-align: center;
     margin-bottom: 50px;
+
+    @media (max-width:900px) {
+      font-size: 24px;
+    }
   }
 
   &__form {
@@ -1007,6 +1025,11 @@ body {
       border-radius: 40px;
       font-size: 18px;
 
+      @media (max-width:900px) {
+        padding: 20px 30px;
+        font-size: 14px;
+      }
+
       &::placeholder {
         color: #ffffff;
       }
@@ -1020,6 +1043,7 @@ body {
 }
 
 .footer {
+  position: relative;
   display: grid;
   grid-template: 1fr / 22% 22% 22% 36%;
   justify-items: center;
@@ -1146,7 +1170,6 @@ body {
   &__build {
     padding: 17px 40px;
   }
-
 }
 
 .copyright {
