@@ -10,12 +10,10 @@
 </head>
 <body>
 <div class="_container">
-    <!--    todo remove arrow from img and do it once-->
-    <!--    todo add one class to all carousel buttons and remove from styles -->
     <!--    todo remove all alts at icons if they are decorative-->
     <header class="header">
         <div class="header__logo">
-            <img src="./src/img/main/logo.svg" alt="logo" class="logo__img">
+            <img src="./src/img/main/logo.svg" alt="" class="logo__img">
             <img src="./src/img/main/logo-name.svg" alt="name of the company 'Hydra'" class="logo__name">
         </div>
         <nav class="header__nav">
@@ -38,7 +36,8 @@
             <a href="#" class="header__contact-link">CONTACT US</a>
             <a href="#" class="btn-purple header__contact-join">JOIN HYDRA</a>
             <!--            TODO open this menu-->
-            <button class="header__menu"><img src="./src/img/header/menu.svg" alt="menu" class="header__menu-img">
+            <button class="header__menu">
+                <img src="./src/img/header/menu.svg" alt="menu" class="header__menu-img">
             </button>
         </div>
     </header>
@@ -51,7 +50,7 @@
                 incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae.</p>
             <a href="#" class="intro__build">
                 <p class="btn-purple intro__build-text">BUILD YOUR WORLD</p>
-                <img src="./src/img/intro/arrow.svg" alt="arrow" class="intro__build-img">
+                <img src="./src/img/intro/arrow.svg" alt="" class="intro__build-img">
             </a>
         </div>
         <div class="intro__img-container">
@@ -66,21 +65,21 @@
             <img src="./src/img/contact/btn-prev.svg" alt="prev" class="contact__prev-img">
         </button>
         <a href="#" class="contact__item contact__item-active">
-            <img src="./src/img/contact/location.svg" alt="location" class="contact__icon">
+            <img src="./src/img/contact/location.svg" alt="" class="contact__icon">
             <div class="contact__info">
                 <h5 class="contact__title">Pay Us a Visit</h5>
                 <p class="contact__text">Union St, Seattle, WA 98101, United States</p>
             </div>
         </a>
         <a href="#" class="contact__item">
-            <img src="./src/img/contact/call.svg" alt="phone" class="contact__icon">
+            <img src="./src/img/contact/call.svg" alt="" class="contact__icon">
             <div class="contact__info">
                 <h5 class="contact__title">Give Us a Call</h5>
                 <p class="contact__text">(110) 1111-1010</p>
             </div>
         </a>
         <a href="#" class="contact__item">
-            <img src="./src/img/contact/mail.svg" alt="mail" class="contact__icon">
+            <img src="./src/img/contact/mail.svg" alt="" class="contact__icon">
             <div class="contact__info">
                 <h5 class="contact__title">Send Us a Message</h5>
                 <p class="contact__text">Contact@HydraVTech.com</p>
@@ -95,7 +94,7 @@
             <h3 class="info__title-text">INTRODUCTION</h3>
             <div class="info__subtitle">
                 <h4 class="info__subtitle-text">TO HYDRA VR</h4>
-                <img src="./src/img/info/arrow.svg" alt="arrow" class="info__subtitle-img">
+                <img src="./src/img/info/arrow.svg" alt="" class="info__subtitle-img">
             </div>
         </div>
         <p class="info__text">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
@@ -129,7 +128,7 @@
             <h3 class="info__title-text">WHY BUILD</h3>
             <div class="info__subtitle">
                 <h4 class="info__subtitle-text">WITH HYDRA?</h4>
-                <img src="./src/img/info/arrow.svg" alt="arrow" class="info__subtitle-img">
+                <img src="./src/img/info/arrow.svg" alt="" class="info__subtitle-img">
             </div>
         </div>
         <p class="info__text">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
@@ -139,8 +138,8 @@
     </section>
     <!--    TODO add two lines -->
     <section class="options">
-        <button class="options__prev">
-            <img src="./src/img/options/btn-prev.svg" alt="arrow prev" class="options__prev-img">
+        <button class="options__prev btn-carousel-prev">
+            <img src="src/img/main/btn-prev.svg" alt="arrow prev" class="options__prev-img">
         </button>
         <div class="options__item options__item-active">
             <img src="./src/img/options/01.png" alt="SIMULATION" class="options__img">
@@ -174,22 +173,22 @@
                 libero justo laoreet sit amet vitae.</p>
             <a href="" class="options__btn btn-purple">TRY IT NOW</a>
         </div>
-        <button class="options__next">
-            <img src="./src/img/options/btn-next.svg" alt="arrow next" class="options__next-img">
+        <button class="options__next btn-carousel-next">
+            <img src="src/img/main/btn-prev.svg" alt="arrow next" class="options__next-img">
         </button>
-
+        <img src="./src/img/options/line.svg" alt="" class="options__line">
     </section>
     <section class="clients">
         <div class="clients__intro">
             <h3 class="clients__title">TECHNOLOGIES & HARDWARE</h3>
             <h5 class="clients__subtitle">USED BY HYDRA VR.</h5>
             <div class="clients__arrow">
-                <img src="./src/img/clients/arrow.svg" alt="arrow down" class="clients__arrow-img">
+                <img src="./src/img/clients/arrow.svg" alt="" class="clients__arrow-img">
             </div>
         </div>
         <div class="clients__list">
-            <button class="clients__prev btn-carousel">
-                <img src="./src/img/options/btn-prev.svg" alt="">
+            <button class="clients__prev btn-carousel-prev">
+                <img src="src/img/main/btn-prev.svg" alt="prev">
             </button>
             <div class="clients__item clients__item-active">
                 <img src="./src/img/clients/01.png" alt="unreal engine" class="clients__item-img">
@@ -203,8 +202,8 @@
             <div class="clients__item">
                 <img src="./src/img/clients/04.png" alt="vive" class="clients__item-img">
             </div>
-            <button class="clients__next btn-carousel">
-                <img src="./src/img/options/btn-next.svg" alt="">
+            <button class="clients__next btn-carousel-next">
+                <img src="src/img/main/btn-prev.svg" alt="next">
             </button>
         </div>
     </section>
@@ -213,7 +212,7 @@
             <h3 class="info__title-text">HOW WE BUILD</h3>
             <div class="info__subtitle">
                 <h4 class="info__subtitle-text">WITH HYDRA VR</h4>
-                <img src="./src/img/info/arrow.svg" alt="arrow" class="info__subtitle-img">
+                <img src="./src/img/info/arrow.svg" alt="" class="info__subtitle-img">
             </div>
         </div>
         <p class="info__text">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat
@@ -222,8 +221,8 @@
             lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
     </section>
     <section class="steps">
-        <img src="./src/img/steps/line.svg" alt="previous" class="steps__line">
-        <button class="steps__prev btn-purple">
+        <img src="./src/img/steps/line.svg" alt="prev" class="steps__line">
+        <button class="steps__prev btn-carousel-prev">
             <img src="./src/img/main/btn-prev.svg" alt="" class="steps__prev-img">
         </button>
         <div class="steps__item steps__item-active">
@@ -254,8 +253,8 @@
                 <p class="steps__name">Hydra VR <br>Deploy</p>
             </div>
         </div>
-        <button class="steps__next btn-purple">
-            <img src="./src/img/main/btn-next.svg" alt="next" class="steps__next-img">
+        <button class="steps__next btn-carousel-next">
+            <img src="./src/img/main/btn-prev.svg" alt="next" class="steps__next-img">
         </button>
     </section>
     <section class="join">
@@ -277,9 +276,10 @@
             <input type="submit" class="join__form-submit btn-purple" id="form-submit" value="SEND TO HYDRA">
         </form>
     </section>
+<!--    todo add decorative lines-->
     <footer class="footer">
         <div class="footer__section">
-            <img src="./src/img/main/logo.svg" alt="logo" class="footer__logo">
+            <img src="./src/img/main/logo.svg" alt="" class="footer__logo">
         </div>
         <ul class="footer__section">
             <li class="footer__link"><a href="#" class="footer__link-item">ABOUT</a></li>
