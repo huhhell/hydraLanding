@@ -62,6 +62,81 @@ body {
   transform: rotateY(180deg);
 }
 
+.menu {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background: #362B40;
+  width: 50%;
+  height: 700px;
+  padding: 30px;
+  border-left: 3px solid rgba(158, 140, 193, 0.5);
+  border-bottom: 3px solid rgba(158, 140, 193, 0.5);
+  transform: translateY(-100%);
+  transition: 0.4s ease-out all;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  &__open {
+    transform: translateY(0);
+  }
+
+  &__container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+
+    &-img {}
+  }
+  
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {}
+  &__item-link {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__buttons {}
+
+  &__join, &__contact {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__join {
+    margin: 0 auto 30px auto;
+  }
+
+  &__contact {
+    margin: 0 auto;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+  }
+}
+
+// todo add hover to links
+
 .header {
   position: relative;
   z-index: 3;
