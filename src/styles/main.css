@@ -105,6 +105,9 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
+.menu__item-link:hover {
+  text-decoration: underline 2px;
+}
 .menu__join, .menu__contact {
   display: block;
   padding: 15px 0;
@@ -164,7 +167,6 @@ body {
 }
 .header__nav-item {
   font-size: 14px;
-  color: white;
   font-weight: 700;
   letter-spacing: 0.7px;
 }
@@ -192,10 +194,14 @@ body {
     display: none;
   }
 }
+@media (max-width: 1200px) {
+  .header__contact-link, .header__contact-join {
+    display: none;
+  }
+}
 .header__contact-link {
-  color: #fff;
   border: 2px solid #ffffff;
-  background: #302C42;
+  background: #362B40;
 }
 .header__contact-link:hover {
   color: #343045;
@@ -236,7 +242,6 @@ body {
 .intro__title, .intro__title-purple {
   font-size: 46px;
   font-weight: 700;
-  color: #ffffff;
 }
 @media (max-width: 1200px) {
   .intro__title, .intro__title-purple {
@@ -274,7 +279,6 @@ body {
 }
 .intro__text {
   max-width: 450px;
-  color: #FFF;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 50px;
@@ -431,7 +435,6 @@ body {
   display: flex;
 }
 .contact__title {
-  color: #ffffff;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -442,7 +445,6 @@ body {
   }
 }
 .contact__text {
-  color: #ffffff;
   font-size: 14px;
 }
 .contact__prev {
@@ -504,7 +506,6 @@ body {
   flex: 0 1 50%;
 }
 .info__title-text {
-  color: #FFF;
   font-size: 36px;
   font-weight: 700;
   margin-bottom: -20px;
@@ -536,7 +537,6 @@ body {
 }
 .info__subtitle-text {
   font-size: 36px;
-  color: #ffffff;
   font-weight: 300;
 }
 @media (max-width: 1000px) {
@@ -556,7 +556,6 @@ body {
 }
 .info__text {
   flex: 0 1 50%;
-  color: #FFF;
   font-size: 16px;
 }
 @media (max-width: 1000px) {

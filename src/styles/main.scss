@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 
-// TODO add white color to * and delete it everywhere
 * {
   font-family: Monserrat, sans-serif;
   font-size: 12px;
@@ -112,6 +111,10 @@ body {
   &__item-link {
     font-size: 24px;
     font-weight: 700;
+
+    &:hover {
+      text-decoration: underline 2px;
+    }
   }
 
   &__buttons {}
@@ -134,8 +137,6 @@ body {
     border-radius: 40px;
   }
 }
-
-// todo add hover to links
 
 .header {
   position: relative;
@@ -185,7 +186,6 @@ body {
 
     &-item {
       font-size: 14px;
-      color: #ffff;
       font-weight: 700;
       letter-spacing: 0.7px;
 
@@ -216,10 +216,15 @@ body {
       }
     }
 
+    &-link, &-join {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+
     &-link {
-      color: #fff;
       border: 2px solid #ffffff;
-      background: #302C42;
+      background: #362B40;
 
       &:hover {
         color: #343045;
@@ -269,7 +274,6 @@ body {
   &__title, &__title-purple {
     font-size: 46px;
     font-weight: 700;
-    color: #ffffff;
 
     @media (max-width: 1200px) {
       font-size: 40px;
@@ -305,7 +309,6 @@ body {
 
   &__text {
     max-width: 450px;
-    color: #FFF;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 50px;
@@ -478,7 +481,6 @@ body {
   }
 
   &__title {
-    color: #ffffff;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -489,7 +491,6 @@ body {
   }
 
   &__text {
-    color: #ffffff;
     font-size: 14px;
   }
 
@@ -551,7 +552,6 @@ body {
   }
 
   &__title-text {
-    color: #FFF;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: -20px;
@@ -580,7 +580,6 @@ body {
 
     &-text {
       font-size: 36px;
-      color: #ffffff;
       font-weight: 300;
 
       @media (max-width: 1000px) {
@@ -602,8 +601,6 @@ body {
 
   &__text {
     flex: 0 1 50%;
-
-    color: #FFF;
     font-size: 16px;
 
     @media (max-width: 1000px) {
